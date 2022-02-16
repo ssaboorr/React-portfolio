@@ -7,6 +7,7 @@ import {
   useColorMode,
   Button,
 } from "@chakra-ui/react";
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 import { Link as RouterLink } from "react-router-dom";
 
@@ -60,6 +61,9 @@ const Navbar = () => {
           <Link as={RouterLink} to="/projects" fontSize="xl" fontWeight="bold">
             Projects
           </Link>
+          <Link as={RouterLink} to="/resume" fontSize="xl" fontWeight="bold">
+            Resume
+          </Link>
           <DarkMode />
         </Flex>
         <Box
@@ -72,9 +76,15 @@ const Navbar = () => {
             justifyContent="space-evenly"
             direction="row"
           >
-            <Icon mx="2" w="4" h="4" />
-            <Icon mx="2" w="4" h="4" />
-            <Icon mx="2" w="4" h="4" />
+            <Link href="https://github.com/ssaboorr">
+              <Icon as={BsGithub} w="4" h="4" mx="2" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/saboor-ansari/">
+              <Icon as={BsLinkedin} w="4" h="4" mx="2" />
+            </Link>
+            <Link href="/">
+              <Icon as={BsInstagram} w="4" h="4" mx="2" />
+            </Link>
           </Flex>
         </Box>
       </Flex>
