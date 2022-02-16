@@ -26,7 +26,7 @@ import {
   SiFigma,
 } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
-import Card from "../components/Card";
+import { Card } from "../components/Card";
 import GitHubCalendar from "react-github-calendar";
 
 const AboutScreen = () => {
