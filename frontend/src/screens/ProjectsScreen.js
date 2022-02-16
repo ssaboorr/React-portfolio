@@ -1,9 +1,11 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { ProjectCard } from "../components/Card";
+import Particle from "../components/Particles";
 
 const ProjectsScreen = () => {
   return (
     <>
+    <Particle/>
       <Flex
         w="full"
         direction="column"
@@ -11,6 +13,7 @@ const ProjectsScreen = () => {
         alignItems="center"
         mt="86px"
         py="10"
+        zIndex="100"
       >
         <Flex
           mt="40px"

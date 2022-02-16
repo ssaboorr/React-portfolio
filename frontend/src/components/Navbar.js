@@ -64,7 +64,7 @@ const Navbar = () => {
           <Link as={RouterLink} to="/resume" fontSize="xl" fontWeight="bold">
             Resume
           </Link>
-          <DarkMode />
+          {/* <DarkMode /> */}
         </Flex>
         <Box
           mr={{ lg: "163px", md: "140px", base: "0" }}

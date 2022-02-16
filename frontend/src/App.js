@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import AboutScreen from "./screens/AboutScreen";
 import ProjectsScreen from "./screens/ProjectsScreen";
 import ResumeScreen from "./screens/ResumeScreen";
+import Particle from "./components/Particles";
+
 const App = () => {
   return (
     <>

@@ -28,6 +28,7 @@ import {
 import { AiFillGithub } from "react-icons/ai";
 import { Card } from "../components/Card";
 import GitHubCalendar from "react-github-calendar";
+import Particle from "../components/Particles";
 
 const AboutScreen = () => {
   const skill = [
@@ -49,6 +50,8 @@ const AboutScreen = () => {
   ];
   return (
     <>
+      <Particle />
+
       <Flex
         w="full"
         mt="85px"
@@ -57,6 +60,7 @@ const AboutScreen = () => {
         py="10"
         wrap="wrap"
         direction="column"
+        zIndex="100"
       >
         <Flex
           justifyContent="center"
