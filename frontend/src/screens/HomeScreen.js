@@ -3,8 +3,8 @@ import HeroOne from "../components/HeroOne";
 import HeroThree from "../components/HeroThree";
 import HeroTwo from "../components/HeroTwo";
 import Particle from "../components/Particles";
-import Type from "../components/Type";
 const HomeScreen = () => {
+
   return (
     <>
       <Particle />

@@ -8,18 +8,31 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
+
+import changeTheme from "../actions/colorActions";
 
 import { Link as RouterLink } from "react-router-dom";
 
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+
 function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const dispatch = useDispatch();
+
+  const theme = useSelector((state) => state.colorMode);
+
+  const changeColor = () => {
+    toggleColorMode();
+    dispatch(changeTheme(colorMode));
+  };
+
   return (
     <>
       {colorMode === "light" ? (
-        <Icon onClick={toggleColorMode} as={BsFillMoonFill} w="4" h="4" />
+        <Icon onClick={changeColor} as={BsFillMoonFill} w="4" h="4" />
       ) : (
-        <Icon onClick={toggleColorMode} as={BsFillSunFill} w="4" h="4" />
+        <Icon onClick={changeColor} as={BsFillSunFill} w="4" h="4" />
       )}
     </>
   );
@@ -64,7 +77,7 @@ const Navbar = () => {
           <Link as={RouterLink} to="/resume" fontSize="xl" fontWeight="bold">
             Resume
           </Link>
-          {/* <DarkMode /> */}
+          <DarkMode />
         </Flex>
         <Box
           mr={{ lg: "163px", md: "140px", base: "0" }}

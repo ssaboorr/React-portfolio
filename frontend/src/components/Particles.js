@@ -1,25 +1,28 @@
 import Particles from "react-tsparticles";
+import { useSelector } from "react-redux";
 
 const Particle = () => {
-  const particlesInit = (main) => {
-    console.log(main);
+  const { color } = useSelector((state) => state.colorMode);
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
+  let particleColor;
+  let linkColor;
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  if (color === "light") {
+    particleColor = "#FFFFFF";
+    linkColor = "#FFFFFF";
+  } else {
+    particleColor = "#000000";
+    linkColor = "#000000";
+  }
+
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         background: {
-          color: {
-            value: "#A0AEC0",
-          },
+          //   color: {
+          //     value: "#A0AEC0",
+          //   },
         },
         fpsLimit: 120,
         interactivity: {
@@ -52,13 +55,13 @@ const Particle = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: `${particleColor}`,
           },
           links: {
-            color: "#ffffff",
+            color: `${linkColor}`,
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.2,
             width: 1,
           },
           collisions: {
@@ -69,7 +72,7 @@ const Particle = () => {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 6,
+            speed: 4,
             straight: false,
           },
           number: {
@@ -80,7 +83,7 @@ const Particle = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.2,
           },
           shape: {
             type: "circle",
