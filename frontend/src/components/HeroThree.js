@@ -12,6 +12,8 @@ const HeroThree = () => {
         h="300px"
         p="7"
         wrap="wrap"
+        backdropFilter="saturate(180%) blur(10px)"
+
       >
         <Flex
           direction="column"

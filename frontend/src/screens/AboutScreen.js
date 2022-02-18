@@ -71,6 +71,7 @@ const AboutScreen = () => {
           borderColor="purple.800"
           shadow="lg"
           mt="10"
+          backdropFilter="saturate(180%) blur(10px)"
         >
           <Flex mx="10" direction="column">
             <Heading
@@ -308,6 +309,7 @@ const AboutScreen = () => {
             justifyContent="center"
             wrap="wrap"
             gap="20"
+            backdropFilter="saturate(180%) blur(10px)"
           >
             <GitHubCalendar
               username="ssaboorr"

@@ -16,6 +16,10 @@ const HeroOne = () => {
         borderBottom="1px"
         shadow="lg"
         borderColor="purple.200"
+        backdropFilter="saturate(180%) blur(10px)"
+        zIndex="20"
+
+
       >
         <Flex direction="column" justifyContent="flex-start" p="5">
           <Text as="h2" fontSize={{ lg: "5xl", base: "3xl" }} fontWeight="bold">

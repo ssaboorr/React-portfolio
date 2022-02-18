@@ -11,8 +11,9 @@ export const Card = ({ children, ic }) => {
         borderColor="purple.900"
         p="9"
         shadow="3px 2px purple"
-        _hover={{ shadow: "5px 5px purple" }}
+        _hover={{ shadow: "5px 5px 5px 5px purple" }}
         rounded="md"
+        backdropFilter="saturate(180%) blur(10px)"
       >
         <Icon as={ic} my="3" w="20" h="20" />
         <Heading my="3" as="h3" fontSize="3xl">
@@ -27,19 +28,21 @@ export const ProjectCard = ({ desc, git, source, src }) => {
   return (
     <>
       <Flex
-       
         direction="column"
         justifyContent="center"
         alignItems="center"
-        border="2px  2px solid purple"
+        // border="2px  2px solid purple"
         borderColor="purple.900"
         p="3"
-        shadow="3px 2px purple"
-        _hover={{ shadow: "5px 5px purple" }}
+        shadow="lg"
+        dropShadow="lg"
+        shadowColor="purple"
+        _hover={{ shadow: "5px 5px 5px 5px purple" }}
         rounded="md"
         mt="6"
         wrap="wrap"
         m="8"
+        backdropFilter="saturate(180%) blur(10px)"
       >
         <Image
           my="8"

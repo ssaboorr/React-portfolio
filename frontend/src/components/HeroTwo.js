@@ -17,6 +17,8 @@ const HeroTwo = () => {
         shadow="lg"
         borderColor="purple.200"
         p="10"
+        backdropFilter="saturate(180%) blur(10px)"
+
       >
         <Flex p="10" direction="row" gap="20" wrap="wrap">
           <Flex direction="column" justifyContent="center">

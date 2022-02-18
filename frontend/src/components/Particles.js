@@ -58,11 +58,11 @@ const Particle = () => {
             value: `${particleColor}`,
           },
           links: {
-            color: `${linkColor}`,
-            distance: 150,
-            enable: true,
-            opacity: 0.2,
-            width: 1,
+            // color: `${linkColor}`,
+            // distance: 150,
+            // enable: true,
+            // opacity: 0.2,
+            // width: 1,
           },
           collisions: {
             enable: true,
@@ -72,7 +72,7 @@ const Particle = () => {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 4,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -83,7 +83,7 @@ const Particle = () => {
             value: 80,
           },
           opacity: {
-            value: 0.2,
+            value: 0.6,
           },
           shape: {
             type: "circle",
