@@ -58,11 +58,11 @@ const Particle = () => {
             value: `${particleColor}`,
           },
           links: {
-            // color: `${linkColor}`,
-            // distance: 150,
-            // enable: true,
-            // opacity: 0.2,
-            // width: 1,
+             color: `${linkColor}`,
+             distance: 150,
+            enable: true,
+            opacity: 0.2,
+            width: 1,
           },
           collisions: {
             enable: true,
