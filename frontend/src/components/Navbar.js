@@ -62,7 +62,7 @@ const Navbar = () => {
               fontSize="3xl"
               textShadow="1px 1px purple"
             >
-              Abdussaboor
+              Abdus Saboor
             </Heading>
           </Link>
         </Flex>
@@ -71,9 +71,9 @@ const Navbar = () => {
           <Link as={RouterLink} to="/about" fontSize="xl" fontWeight="bold">
             About
           </Link>
-          <Link as={RouterLink} to="/projects" fontSize="xl" fontWeight="bold">
+          {/* <Link as={RouterLink} to="/projects" fontSize="xl" fontWeight="bold">
             Projects
-          </Link>
+          </Link> */}
           <Link as={RouterLink} to="/resume" fontSize="xl" fontWeight="bold">
             Resume
           </Link>
@@ -94,9 +94,6 @@ const Navbar = () => {
             </Link>
             <Link href="https://www.linkedin.com/in/saboor-ansari/">
               <Icon as={BsLinkedin} w="4" h="4" mx="2" />
-            </Link>
-            <Link href="/">
-              <Icon as={BsInstagram} w="4" h="4" mx="2" />
             </Link>
           </Flex>
         </Box>

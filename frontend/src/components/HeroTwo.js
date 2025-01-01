@@ -16,9 +16,8 @@ const HeroTwo = () => {
         borderBottom="1px"
         shadow="lg"
         borderColor="purple.200"
-        p="10"
+        // p="10"
         backdropFilter="saturate(180%) blur(10px)"
-
       >
         <Flex p="10" direction="row" gap="20" wrap="wrap">
           <Flex direction="column" justifyContent="center">
@@ -39,7 +38,26 @@ const HeroTwo = () => {
               mt="3"
               mb="5"
             >
-              Passed Out B.E (Computer Engineering) in 2021
+              Driven by a passion for innovation, I specialize in crafting
+              high-performance web and mobile applications that deliver seamless
+              user experiences. With 4 years of hands-on expertise in{" "}
+              <span style={{ color: "purple", fontWeight: "bold" }}>
+                React.js
+              </span>
+              ,{" "}
+              <span style={{ color: "purple", fontWeight: "bold" }}>
+                React Native
+              </span>
+              ,{" "}
+              <span style={{ color: "purple", fontWeight: "bold" }}>
+                Node.js
+              </span>
+              , and{" "}
+              <span style={{ color: "purple", fontWeight: "bold" }}>
+                JavaScript
+              </span>
+              , I excel at building scalable solutions tailored for high-traffic
+              environments.
             </Text>
             <Text
               fontSize={{ lg: "3xl", base: "2xl" }}
@@ -51,85 +69,27 @@ const HeroTwo = () => {
               <br />
               challenges his analytical and technological capacities
             </Text>
+
             <Text
               fontSize={{ lg: "3xl", base: "2xl" }}
               fontWeight="medium"
               mt="3"
               mb="5"
             >
-              I am fluent
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                Javascript
-              </span>
-              developer.
-            </Text>
-            <Text
-              fontSize={{ lg: "3xl", base: "2xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="5"
-            >
-              My field of Interest's are building new Web Applications and
-              Products
-            </Text>
-            <Text
-              fontSize={{ lg: "3xl", base: "2xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="5"
-            >
-              Whenever possible, I apply my passion for developing products with
-              <br />
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                Node.js
-              </span>
-              and
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                }}
-              >
-                Modern Javascript Library{" "}
-              </span>
-              and Frameworks like<span> React.js</span>
-              <br />
-              and
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                }}
-              >
-                Redux
-              </span>
+              Whether it's developing REST APIs, optimizing performance, or
+              enhancing user experience, I am committed to delivering excellence
+              and innovation at every step.
             </Text>
           </Flex>
-          <Box>
+          {/* <Box>
             <Image
               rounded="full"
               src="profile2.jpg"
               objectFit="cover"
               w={{ lg: "400px", md: "300px", base: "300px" }}
-              w={{ lg: "400px", md: "300px", base: "300px" }}
+              // w={{ lg: "400px", md: "300px", base: "300px" }}
             />
-          </Box>
+          </Box> */}
         </Flex>
       </Flex>
     </>

@@ -39,7 +39,7 @@ const AboutScreen = () => {
     { skill: "Redux", ic: SiRedux },
     { skill: "HTML", ic: DiHtml5 },
     { skill: "CSS", ic: DiCss3 },
-    { skill: "Chakra UI", ic: SiChakraui },
+    // { skill: "Chakra UI", ic: SiChakraui },
   ];
 
   const tools = [
@@ -73,120 +73,7 @@ const AboutScreen = () => {
           mt="10"
           backdropFilter="saturate(180%) blur(10px)"
         >
-          <Flex mx="10" direction="column">
-            <Heading
-              as="h2"
-              fontWeight="medium"
-              fontSize={{ lg: "5xl", base: "3xl" }}
-            >
-              Know who
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                I'M
-              </span>
-            </Heading>
-            <Text
-              fontSize={{ lg: "2xl", base: "xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="2"
-            >
-              Hello every one, I am{" "}
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                Ansari Abdus Saboor{" "}
-              </span>
-              , <br /> born and broughtup in Mumbai, India
-            </Text>
-            <Text
-              fontSize={{ lg: "2xl", base: "xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="2"
-            >
-              I completed my{" "}
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                B.E in Computer Engineering
-              </span>{" "}
-              from <br /> Anjuman Islam Kalsekar Technical Campus in 2021
-            </Text>
-            <Text
-              fontSize={{ lg: "2xl", base: "xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="2"
-            >
-              Although I dont have any experience,
-              <br /> i am fluent in{" "}
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                Javascript
-              </span>{" "}
-              and in{" "}
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                {" "}
-                MERN stack
-              </span>
-            </Text>
-            <Text
-              fontSize={{ lg: "2xl", base: "xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="2"
-            >
-              I did an offline Course in{" "}
-              <span
-                style={{
-                  color: "purple",
-                  fontWeight: "bold",
-                  marginLeft: "4px",
-                  marginRight: "4px",
-                }}
-              >
-                {" "}
-                Full Stack JavaScript Development
-              </span>
-            </Text>
-            <Text
-              fontSize={{ lg: "2xl", base: "xl" }}
-              fontWeight="medium"
-              mt="3"
-              mb="2"
-            >
-              Apart From Coding here are thr things i Do:
-            </Text>
+          <Flex mx="10" direction="column" width={"50%"}>
             <List>
               <ListItem
                 fontSize={{ lg: "2xl", base: "xl" }}
@@ -194,7 +81,9 @@ const AboutScreen = () => {
                 mt="3"
                 mb="2"
               >
-                Playing Football
+                With 4 years of experience building scalable and
+                high-performance web and mobile applications, I am confident in
+                my ability to contribute effectively to any product
               </ListItem>
               <ListItem
                 fontSize={{ lg: "2xl", base: "xl" }}
@@ -202,7 +91,9 @@ const AboutScreen = () => {
                 mt="3"
                 mb="2"
               >
-                Video games
+                In my previous roles, I have developed front-end and back-end
+                solutions using technologies like React.js, React Native,
+                Node.js, and MongoDB.
               </ListItem>
               <ListItem
                 fontSize={{ lg: "2xl", base: "xl" }}
@@ -210,7 +101,18 @@ const AboutScreen = () => {
                 mt="3"
                 mb="2"
               >
-                Dedicated towards Fitness
+                My work at SARG Global Digital included designing and
+                implementing features for web and mobile platforms, ensuring
+                optimal performance and user experience.{" "}
+              </ListItem>
+              <ListItem
+                fontSize={{ lg: "2xl", base: "xl" }}
+                fontWeight="medium"
+                mt="3"
+                mb="2"
+              >
+                I also have hands-on experience with Agile methodologies and
+                REST API integration{" "}
               </ListItem>
             </List>
           </Flex>
@@ -283,7 +185,7 @@ const AboutScreen = () => {
           </Flex>
         </Flex>
 
-        <Flex
+        {/* <Flex
           mt="10"
           direction="column"
           justifyContent="center"
@@ -312,13 +214,13 @@ const AboutScreen = () => {
             backdropFilter="saturate(180%) blur(10px)"
           >
             <GitHubCalendar
-              username="ssaboorr"
+              username="sabooransari"
               blockSize={15}
               blockMargin={5}
               fontSize={16}
             />
           </Flex>
-        </Flex>
+        </Flex> */}
       </Flex>
     </>
   );
