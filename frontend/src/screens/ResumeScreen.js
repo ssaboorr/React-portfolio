@@ -10,12 +10,12 @@ import Particle from "../components/Particles";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://github.com/ssaboorr/React-portfolio/raw/main/frontend/src/Assets/SaboorResume.pdf";
+  "https://github.com/ssaboorr/React-portfolio/raw/main/frontend/src/Assets/AbdusSaboorAnsari.pdf";
 
 const ResumeScreen = () => {
   const [width, setWidth] = useState(1200);
 
-  const [numPages, setNumPages] = useState(3);
+  const [numPages, setNumPages] = useState(2);
   const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
@@ -28,7 +28,7 @@ const ResumeScreen = () => {
 
   return (
     <>
-    <Particle/>
+      <Particle />
       <Flex
         w="full"
         direction="column"
@@ -61,10 +61,10 @@ const ResumeScreen = () => {
 
         <Flex display="column">
           <Document
-            file="SaboorResume.pdf"
+            file="AbdusSaboorAnsari.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page pageNumber={pageNumber} scale={width > 786 ? 1.2: 0.6} />
+            <Page pageNumber={pageNumber} scale={width > 786 ? 1.2 : 0.6} />
           </Document>
           <p>
             {" "}
